@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layouts en HTML</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f8f9fa; color: #333; }
+        .container { width: 90%; margin: auto; max-width: 1200px; }
+        .header, .footer { background: #444; color: white; text-align: center; padding: 15px; font-size: 18px; }
+        
+        /* Layout 1: Una sola columna */
+        .full-width { padding: 25px; background: #e9ecef; text-align: center; margin: 10px 0; border-radius: 8px; }
+        
+        /* Layout 2: Dos columnas (Sidebar más grande y vertical) */
+        .two-columns { display: flex; gap: 10px; margin: 10px 0; height: 500px; }
+        .sidebar { width: 25%; background: #dee2e6; padding: 30px; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+        .content { width: 75%; padding: 30px; background: #ced4da; border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">Encabezado</div>
+        
+        <!-- Layout 1: Una sola columna -->
+        <div class="full-width">Una sola columna</div>
+        
+        <!-- Layout 2: Dos columnas (Sidebar más grande y vertical) -->
+        <div class="two-columns">
+            <div class="sidebar">Barra lateral</div>
+            <div class="content">Contenido principal</div>
+        </div>
+        
+        <div class="footer">Pie de página</div>
+    </div>
+</body>
+</html>
